@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script src="./vue.js"></script> -->
+    <link rel="stylesheet" href="./css/index.css">
+    <style type="text/css">
+        /* #out {
+            position: fixed;
+            width: 400px;
+            height: 200px;
+            background: red;
+        }
+
+        #in {
+            width: 50%;
+            height: 50%;
+            background: yellow;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        } */
+        #container {
+            position: relative;
+            /*或position: absolute;*/
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* top: 100px;
+            left: 200px; */
+            /* transform: translate(200px,100px); */
+            margin-left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+<div id="app">
+    <div>
+        这是第一个页面
+       <span @click="go()">{{msg}}</span>
+        <input type="text"> 
+        <a href="./index2.html">下一页</a> 
+    </div>
+</div>
+-->
+    <!-- 正则检测固话以及手机号 -->
+    <!-- <script src="./js/check-phone.js"></script> -->
+    <!-- 函数式编程 -->
+    <!-- <script src="./js/function.js"></script> -->
+    <!-- <script src="./js/promise.js"></script> -->
+    <!-- <script src="./lib/qrcode.js"></script> -->
+    <!-- <div id="out">
+        <div id="in"></div>
+    </div> -->
+    <div id="container"></div>
+    <script>
+        var container = document.getElementById("container");
+        console.log(container.offsetLeft);
+        console.log(container.offsetTop);
+    </script>
+    <script>
+        // new Vue({
+        //     el: '#app',
+        //     data() {
+        //         return {
+        //             msg: '下一页'
+        //         }
+        //     },
+        //     methods: {
+        //         go() {
+        //             // 离开页面时存储当前选择的状态（点击的是第几个菜单）
+        //             location.href = './index2.html';
+        //         }
+        //     },
+        //     mounted() {
+        //         if (location.href.indexOf('aaa') > -1) {
+        //             // 再次进入这个页面,从localstorage中取出存储的状态。设置菜单
+        //         } else {
+        //             // 首次进入这个页面，把当前历史纪录换掉
+        //             history.replaceState('index', null, './index.html#aaa')
+        //         }
+        //     }
+        // })
+
+        // (function () {
+        //     //微信内置浏览器浏览H5页面弹出的键盘遮盖文本框的解决办法
+        //     var inputs = document.getElementsByTagName('input');
+        //     for (let i = 0; i < inputs.length; i++) {
+        //         const input = inputs[i];
+        //         input.addEventListener('focus', function (ev) {
+        //             console.log(ev);
+        //             ev.target.scrollIntoView();
+        //         })
+        //     }
+        // })();
+
+        // var qrcode = new QRCode(document.getElementById("qrcode"), {
+        //     width: 96, //设置宽高
+        //     height: 96
+        // });
+        // qrcode.makeCode("http://www.baidu.com");
+    </script>
+</body>
+
+</html>
