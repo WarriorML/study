@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>index</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+    <meta name="flexible" content="initial-dpr=2" />
     <!-- <script src="./vue.js"></script> -->
+    <script src="./lib/lib-flexible.js"></script>
     <link rel="stylesheet" href="./css/index.css">
     <style type="text/css">
         /* #out {
@@ -50,6 +53,8 @@
     </div>
 </div>
 -->
+    <input type="password" placeholder="请输入支付密码" id="psw">
+    <input type="text" placeholder="请输入支付密码" id="psw-1" onfocus="psw1Focus()">
     <!-- 正则检测固话以及手机号 -->
     <!-- <script src="./js/check-phone.js"></script> -->
     <!-- 函数式编程 -->
@@ -59,13 +64,16 @@
     <!-- <div id="out">
         <div id="in"></div>
     </div> -->
-    <div id="container"></div>
+    <!-- <div id="container"></div>
     <script>
         var container = document.getElementById("container");
         console.log(container.offsetLeft);
         console.log(container.offsetTop);
-    </script>
+    </script> -->
     <script>
+        function psw1Focus() {
+            document.getElementById('psw').focus();
+        }
         // new Vue({
         //     el: '#app',
         //     data() {
