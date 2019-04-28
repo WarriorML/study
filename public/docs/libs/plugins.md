@@ -23,3 +23,7 @@
 [raphael](https://dmitrybaranovskiy.github.io/raphael/)       
 [threejs](https://threejs.org/docs/)   
 [d3js](https://d3js.org/)
+
+#### 人脸识别
+[jquery.facedetection](https://github.com/jaysalvat/jquery.facedetection)
+[tracking.js](https://trackingjs.com/)

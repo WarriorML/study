@@ -18,8 +18,7 @@ function judgeDeviceType() {
 // 获取到焦点元素滚动到可视区
 function activeElementScrollIntoView(activeElement, delay) {
     var editable = activeElement.getAttribute('contenteditable')
-    // 输入框、textarea或富文本获取焦点后没有将该元素滚动到可视区
-
+    // 输入框、textarea或富文本获取焦点后没有将该元素滚动到可视区a
     if (
         activeElement.tagName == 'INPUT' || activeElement.tagName == 'TEXTAREA' || editable === '' || editable) {
         setTimeout(function() {
